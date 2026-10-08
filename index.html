@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width,initial-scale=1.0">
+    <title>My First Web Page</title>
+    <link rel="stylesheet"href="css/styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to My Website</h1>
+        <p>Melissa Mumba - 202402571</p>
+        <button id="themeButton">Dark Mode</button>
+    </header>
+<button id="menuButton">☰ Menu</button>
+
+<nav id="mainNav">
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#learning">My Learning Plan</a>
+        <a href="#projects">My Skills & Projects</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#contact">Contact</a>
+    </nav>  
+
+    <main>
+
+        <section id="about" class="content-section">
+            <h2>About Me</h2>
+            <p>
+                My name is Melissa Mumba and I am an Information Technology student
+                at Mulungushi University. I am interested in technology and
+                learning how websites are designed and developed. I am
+                currently improving my programming and web development skills
+                through my university studies. I enjoy learning new things,
+                being creative and developing skills that will help me in my
+                future career.
+            </p>
+        </section>
+
+        <section id="hobbies" class="content-section">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Reading books</li>
+                <li>Watching movies</li>
+                <li>Journalling</li>
+            </ul>
+        </section>
+
+        <section id="learning" class="content-section">
+            <h2>My Learning Plan</h2>
+
+            <ol>
+                <li>Practice HTML and CSS regularly.</li>
+                <li>Learn how to create responsive websites.</li>
+                <li>Build small web projects to improve my skills.</li>
+            </ol>
+
+            <table>
+                <caption>My Weekly Web Learning Plan</caption>
+                <tr>
+                    <th>Day</th>
+                    <th>Topic</th>
+                    <th>Practice Task</th>
+                </tr>
+                <tr>
+                    <td>Monday</td>
+                    <td>HTML</td>
+                    <td>Practice creating web pages</td>
+                </tr>
+                <tr>
+                    <td>Wednesday</td>
+                    <td>CSS</td>
+                    <td>Style a web page</td>
+                </tr>
+                <tr>
+                    <td>Friday</td>
+                    <td>Web Design</td>
+                    <td>Build a small website</td>
+                </tr>
+            </table>
+        </section>
+
+       <section id="photos" class="content-section">
+    <h2>My Photos</h2>
+
+    <p>Here are some photos that represent me and my interests.</p>
+
+    <div class="photo-gallery">
+
+        <figure>
+            <img src="images/photo 1.png" alt="A photo of me">
+            <figcaption>A photo of me.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/photo 2.jpeg" alt="A photo showing one of my interests">
+            <figcaption>A photo showing one of my interests.</figcaption>
+        </figure>
+
+        <figure>
+            <img src="images/photo 3.png" alt="A photo from my student life">
+            <figcaption>A photo from my student life.</figcaption>
+        </figure>
+
+    </div>
+</section>
+        <section id="media" class="content-section">
+            <h2>My Media</h2>
+            <section id="media">
+    <h2>My Media</h2>
+
+    <h3>My Introduction Video</h3>
+
+    <video controls>
+        <source src="videos/intro mp4.mp4" type="video/mp4">
+        Your browser does not support the video element.
+    </video>
+
+    <p>
+        In this video, I introduce myself, talk about my programme,
+        and share a web development skill I hope to learn.
+    </p>
+    <h3>My Audio Introduction</h3>
+
+    <audio controls>
+        <source src="videos/Intro MP3.aac" type="audio/aac">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        In this recording, I explain why I am studying Web Technologies
+        and how I hope to improve my web development skills.
+    </p>
+
+<h3>My Audio Introduction</h3>
+
+    <audio controls>
+        <source src="videos/Intro MP3.aac" type="audio/aac">
+        Your browser does not support the audio element.
+    </audio>
+
+    <p>
+        In this recording, I explain why I am studying Web Technologies
+        and how I hope to improve my web development skills.
+    </p>
+
+</section>
+
+            <!-- We will add your video and audio here -->
+        </section>
+
+        <section id="contact" class="content-section">
+            <h2>Contact Me</h2>
+
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="topic">Topic:</label>
+                <input type="text" id="topic" name="topic">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+            <div id="formFeedback"></div>
+
+            <p>This form is a browser demonstration only and does not send data.</p>
+        </section>
+        <section id="projects" class="content-section">
+    <h2>My Skills and Projects</h2>
+    <input type="text" id="projectSearch"placeholder="Search skills or projects">
+
+    <div class="projects">
+        <div class="project">
+            <h3>HTML and CSS</h3>
+            <p>I have learned how to create and style basic web pages using HTML and CSS.</p>
+        </div>
+
+        <div class="project">
+            <h3>Java Programming</h3>
+            <p>I am learning Java programming and developing my understanding of object-oriented programming.</p>
+        </div>
+
+        <div class="project">
+            <h3>Networking</h3>
+            <p>I have learned basic networking concepts and how to work with network configurations.</p>
+        </div>
+    </div>
+</section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Melissa Mumba. All rights reserved.</p>
+    </footer>
+<script src="js/script.js" defer></script>
+</body>
+</html>

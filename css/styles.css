@@ -1,0 +1,242 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7fb;
+    color: #222;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #243b53;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: #102a43;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+/* Main content */
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 25px auto;
+}
+
+/* Repeated section styling */
+.content-section {
+    background-color: white;
+    padding: 25px;
+    margin: 20px 0;
+    border: 1px solid #ccd6e0;
+    border-radius: 8px;
+}
+
+/* Unique section */
+#hobbies {
+    background-color: #eef5ff;
+}
+
+h2 {
+    color: #243b53;
+}
+
+/* Lists */
+li {
+    margin-bottom: 8px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #999;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d9eaf7;
+}
+
+/* Photos and videos */
+img,
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-gallery figure {
+    margin: 0;
+    width: 30%;
+}
+
+.photo-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Media */
+audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #999;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    min-height: 120px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #243b53;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover,
+button:focus {
+    background-color: #102a43;
+}
+
+/* Footer */
+footer {
+    background-color: #102a43;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .photo-gallery figure {
+        width: 100%;
+    }
+
+    main {
+        width: 94%;
+    }
+}/* Dark mode */
+.dark-mode {
+    background-color: #222;
+    color: white;
+}
+
+.dark-mode .content-section {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+.dark-mode a {
+    color: #ffffff;
+}
+.dark-mode h2 {color:white !important}
+.dark-mode #about {
+    background-color: #333;
+    color: white;
+}
+
+.dark-mode #about p {
+    color: white;
+}
+/* Mobile navigation */
+#menuButton {
+    display: none;
+}
+
+@media (max-width: 600px) {
+    #menuButton {
+        display: block;
+        margin: 10px auto;
+    }
+
+    #mainNav {
+        display: none;
+    }
+
+    #mainNav.show-menu {
+        display: flex;
+        flex-direction: column;
+    }
+    body.dark-mode #about {
+    background-color: #333 !important;
+    color: white !important;
+}
+
+body.dark-mode #about h2,
+body.dark-mode #about p {
+    color: white !important;
+}
+}
